@@ -4,20 +4,93 @@
 
     <title>Lawrence Chen</title>
 
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type = text/css>
+    .navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    .cursive {
+        font-family:cursive;
+    }
+    .garamond {
+        font-family:garamond;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+        font-family: Helvetica;
+    }
+
+    li:hover {
+        background-color: #111;
+    }
+
+    .header {
+        font-size: 300%;
+        font-family: Segoe UI;
+        position: relative;
+        left: 300px:
+    }
+
+    body {
+        background-color: #B1D5DF;
+        margin: 0;
+        padding: 0;
+        font-family: "Open Sans," "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .img {
+      -ms-transform: rotate(90deg); /* IE 9 */
+      -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+      transform: rotate(90deg);
+      position: relative;
+      margin-top: 50px;
+      float: 200px;
+    }
+
+    </style>
+
 </head>
 
     <body>
 
-        <h1>Lawrence Chen</h1>
-        <img src = "inspirationpt.JPG" width = 200 alt = "Lawrence Chen Photo">
-        <p>
+        <ul class="navbar">
+            <li><a class="active" href="#home">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#courses">Courses Taken</a></li>
+            <li><a href="#More">Extra</a></li>
+        </ul>
+
+        <h1 class="header"><b>Lawrence Chen</b></h1>
+        <img class="img" src="inspirationpt.JPG" width=400 alt="Lawrence Chen Photo">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <p class="garamond cursive;">
             Staring pensively off into the distance at Inspiration Point.
         </p>
 
-        <hr />
+        <hr size="10">
 
-        <h2>About Me</h2>
-        <p>
+        <h2 class="garamond cursive;">About Me</h2>
+        <p class="garamond cursive;">
             Hey my name is Lawrence Chen and I'm a first-year undergraduate at UC Berkeley pursuing
             a degree in Electrical Engineering and Computer Science.
         </p>
@@ -32,7 +105,7 @@
             <tr>
                 <td>Lawrence</td>
                 <td>Chen</td>
-            </tr-->
+            </tr>
 
         <hr />
 
@@ -45,7 +118,7 @@
             <li>
                 Bear's Iot Sunlight Clock
             </li>
-        </ul>
+        </ul-->
 
     </body>
 
