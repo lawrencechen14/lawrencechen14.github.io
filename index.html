@@ -8,6 +8,9 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style type = text/css>
     .navbar {
@@ -16,6 +19,7 @@
         padding: 0;
         overflow: hidden;
         background-color: #222222;
+        opacity: 0.65;
     }
 
     li {
@@ -38,33 +42,17 @@
     .header {
         text-align: center;
         font-family: 'PT Sans', sans-serif;
-        font-size: 300%;
+        font-size: 500%;
         color: white;
-        margin: auto;
-        padding: 20px 10px 0px 20px
-    }
-
-    .inspiration {
-        /*-ms-transform: rotate(90deg); /* IE 9 */
-        /*-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-        transform: rotate(90deg);
-        margin: auto;
-        padding: 100px
-        border-style: ridge;
-        box-shadow: 7px 7px 5px #333;
-        border-radius: 20px;
-    }
-
-    .caption {
-        font-family: Garamond;
+        margin-top: 200px;
+        padding: 20px 10px 0px 20px;
     }
 
     body {
         background-image: url("nightsky.jpg");
-        background-size: contain;
+        background-size: cover;
         margin: 0;
         padding: 0;
-        font-family: "Open Sans," "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     hr {
@@ -78,9 +66,11 @@
     }
 
     p {
+        text-align: center;
         font-family: 'PT Sans', sans-serif;
+        font-size: 150%;
         color: white;
-        padding-left: 3px
+        font-family: 'Dancing Script', cursive;
     }
 
     h2 {
@@ -89,8 +79,17 @@
         padding-left: 3px
     }
 
-    .projectlist {
-        font-family: sans-serif;
+    #media {
+        text-align: center;
+        position: fixed;
+        z-index: 100;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    i: hover {
+        color: white;
     }
     </style>
 
@@ -99,7 +98,7 @@
     <body>
 
         <ul class="navbar">
-            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="index.html"><i class="material-icons">home</i></a></li>
             <li><a href="aboutme.html">About Me</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="courses.html">Courses Taken</a></li>
@@ -107,6 +106,18 @@
         </ul>
 
         <h1 class="header"><b>lawrencechen14.github.io</b></h1>
+        <br />
+        <br />
+        <p>
+            “Sometimes the questions are complicated and the answers are simple.” <br />
+― Dr. Seuss
+        </p>
+
+        <div id="media">
+            <a href="https://github.com/lawrencechen14"><i class="fa fa-github" style="font-size:36px;color:black"></i></a>
+            <a href="https://www.facebook.com/lawrence.chen.547727"><i class="fa fa-facebook-square" style="font-size:36px;color:black"></i>
+            <a href="https://www.linkedin.com/in/lawrence-chen-307832124"><i class="fa fa-linkedin-square" style="font-size:36px;color:black"></i></a>
+        </div>
 
     </body>
 
