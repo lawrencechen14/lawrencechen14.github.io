@@ -37,8 +37,8 @@
     }
 
     .inspiration {
-        text-align: center;
         transform: rotate(90deg);
+        display: block;
         margin: auto;
         border-style: ridge;
         box-shadow: 7px 7px 5px #333;
@@ -46,7 +46,8 @@
     }
 
     .caption {
-        font-size: 50%;
+        text-align: center;
+        font-size: 75%;
     }
 
     body {
@@ -67,8 +68,9 @@
     }
 
     p {
-        text-align: center;
+        text-align: left;
         font-family: 'PT Sans', sans-serif;
+        font-size: 125%;
     }
 
     h1 {
@@ -76,10 +78,13 @@
         font-family: 'PT Sans', sans-serif;
         font-size: 300%;
     }
+
+    #info {
+        margin: 20px 300px 20px 300px
+    }
     </style>
 
 </head>
-
 
 <body>
     <ul class="navbar">
@@ -91,13 +96,9 @@
     </ul>
 
     <h1>About Me</h1>
-    <hr />
-    <br />
-    <br />
     <br />
     <br />
     <img align="middle" class="inspiration" src="inspirationpt.JPG" width=400 alt="Lawrence Chen Photo">
-    <br />
     <br />
     <br />
     <br />
@@ -105,18 +106,25 @@
         Me staring pensively off into the distance at Inspiration Point.
         <i class="fa fa-facebook-square" style="font-size:36px"></i>
     </p>
-
-    <hr />
-
-    <p>
-        Hey my name is Lawrence Chen and I'm a first-year undergraduate at UC Berkeley pursuing
-        a degree in Electrical Engineering and Computer Science.
+    <br />
+    <div id="info">
+        <hr />
         <br />
-        <br />
-        I enjoy playing video games, watching shows, and eating lots and lots of food!
-    </p>
-
-    <hr />
+        <p>
+            Hey, my name is Lawrence Chen and I'm a first-year undergraduate student at UC Berkeley pursuing
+            a degree in Electrical Engineering and Computer Science.
+            <br />
+            <br />
+            Although I consider myself a newbie in terms of programming, I am a dedicated person and a hard
+            worker. I created this personal website to begin to explore the world of web design and development.
+            <br />
+            <br />
+            Some of my hobbies outside of programming include playing video games, reading, and eating many types
+            of food. I also am a big fan of professional basketball and follow the Golden State Warriors.
+        </p>
+    </div>
+    <br />
+    <br />
 
 </body>
 
