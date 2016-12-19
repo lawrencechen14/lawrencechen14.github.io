@@ -35,15 +35,6 @@
         background-color: #111;
     }
 
-    .header {
-        text-align: center;
-        font-family: 'PT Sans', sans-serif;
-        font-size: 300%;
-        color: white;
-        margin: auto;
-        padding: 20px 10px 0px 20px
-    }
-
     .inspiration {
         /*-ms-transform: rotate(90deg); /* IE 9 */
         /*-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
@@ -88,26 +79,45 @@
         color: white;
         padding-left: 3px
     }
-
-    .projectlist {
-        font-family: sans-serif;
-    }
     </style>
 
 </head>
 
-    <body>
+<body>
+    <ul class="navbar">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#aboutme.html">About Me</a></li>
+        <li><a href="#projects.html">Projects</a></li>
+        <li><a href="#courses">Courses Taken</a></li>
+        <li><a href="#extra">Extra</a></li>
+    </ul>
 
-        <ul class="navbar">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="courses.html">Courses Taken</a></li>
-            <li><a href="more.html">More</a></li>
-        </ul>
+    <h2>About Me</h2>
+    <br />
+    <br />
+    <br />
+    <br />
+    <img class="inspiration" src="inspirationpt.JPG" width=400 alt="Lawrence Chen Photo">
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+        Me staring pensively off into the distance at Inspiration Point.
+    </p>
 
-        <h1 class="header"><b>lawrencechen14.github.io</b></h1>
+    <hr />
 
-    </body>
+    <p>
+        Hey my name is Lawrence Chen and I'm a first-year undergraduate at UC Berkeley pursuing
+        a degree in Electrical Engineering and Computer Science.
+        <br />
+        <br />
+        I enjoy playing video games, watching shows, and eating lots and lots of food!
+    </p>
+
+    <hr />
+
+</body>
 
 </html>
