@@ -24,12 +24,11 @@ li a:hover {
 }
 
 .inspiration {
-    transform: rotate(90deg);
     display: block;
     margin: auto;
     border-style: ridge;
-    box-shadow: 7px 7px 5px #333;
-    border-radius: 20px;
+    box-shadow: 3px 3px 2px #333;
+    border-radius: 10px;
 }
 
 .caption {
