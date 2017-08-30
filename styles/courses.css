@@ -30,13 +30,21 @@ body {
 }
 
 hr {
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1.5px 0 0 0;
+    border-radius: 20px;
+}
+hr:before {
     display: block;
-    height: 1px;
-    border: 0;
-    border-top: 3px solid #333;
-    border-bottom: 3px solid #333;
-    margin: 1em 0;
-    padding: 0;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1.5px 0;
+    border-radius: 20px;
 }
 
 p {
@@ -55,5 +63,5 @@ h2 {
 }
 
 .info {
-    margin: 20px 300px 20px 300px
+    margin: 0 20% 5% 20%
 }
