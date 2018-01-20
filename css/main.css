@@ -479,7 +479,7 @@ button:focus {
   animation-fill-mode: both;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
-  background: #fff !important;
+  background: lightgray !important;
 }
 
 .top-nav-collapse .navbar-brand {
