@@ -1498,3 +1498,52 @@ section {
     display: none; /* Hide progress bar entirely to avoid fast updates */
   }
 }
+
+/* ============================================================
+   RESUME VIEWER DIALOG
+   ============================================================ */
+.resume-dialog {
+  max-width: 860px;
+  width: 95vw;
+  max-height: 90vh;
+  height: 90vh;
+}
+
+.resume-dialog-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-sm {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+}
+
+.resume-iframe-wrapper {
+  flex: 1;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.resume-iframe-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .resume-dialog {
+    width: 100vw;
+    max-width: 100vw;
+    height: 100dvh;
+    max-height: 100dvh;
+    border-radius: 0;
+    margin: 0;
+  }
+}
