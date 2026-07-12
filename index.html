@@ -1,640 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
-    <title>Lawrence Chen - Student | Software Engineer | Data Scientist</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/line-icons.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/nivo-lightbox.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Lawrence Chen - Software Engineer at Google building Google Analytics, with a background in cloud, virtualization, and full-stack development. UC Berkeley EECS & Data Science alumnus.">
+  <meta name="keywords"
+    content="Lawrence Chen, Portfolio, Software Engineer, Google, VMware, UC Berkeley, EECS, Data Science, Cloud">
+  <meta name="author" content="Lawrence Chen">
+  <title>Lawrence Chen - Software Engineer | Google</title>
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="img/logo_circle_small.png"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114525051-1"></script>
-      <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
 
-          gtag('config', 'UA-114525051-1');
-      </script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/svg+xml" href="img/logo.svg" />
 
-  </head>
-  <body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114525051-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-114525051-1');
+  </script>
+</head>
 
-    <!-- Header Section Start -->
-    <header id="hero-area" data-stellar-background-ratio="0.5">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="lnr lnr-menu"></i>
-            </button>
-          </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#hero-area">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#myprofile">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#coursestaken">Courses Taken</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#resume">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
 
-        <!-- Mobile Menu Start -->
-        <ul class="mobile-menu">
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#hero-area">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#myprofile">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#coursestaken">Courses Taken</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#contact">Contact</a>
-          </li>
+  <!-- Header & Navigation -->
+  <header class="navbar-wrapper">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Lawrence Chen Homepage">
+        <svg class="brand-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"
+          focusable="false">
+          <path d="M 28 25 V 75 H 52" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M 76 32 A 21 21 0 1 0 76 68" fill="none" stroke="currentColor" stroke-width="8"
+            stroke-linecap="round" />
+        </svg>
+      </a>
+      <nav class="main-navigation" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <!-- Mobile Menu End -->
-
       </nav>
-      <!-- Navbar End -->
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-10">
-            <div class="contents text-center">
-              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Welcome to Lawrence Chen's Website.</h1>
-              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Student | Software Engineer | Data Scientist</p>
-              <a href="#myprofile" class="page-scroll btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Click to learn more about me</a>
-            </div>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode">
+          <!-- Sun Icon -->
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-greeting">Hi, welcome to</span>
+          <h1 class="hero-title">Lawrence Chen</h1>
+          <p class="hero-subtitle">Software Engineer @ Google &middot; UC Berkeley Alum</p>
+          <div class="hero-cta-group">
+            <a href="#about" class="btn btn-primary">Learn More About Me</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
           </div>
         </div>
       </div>
-    </header>
-    <!-- Header Section End -->
+    </section>
 
-    <!-- About Me Section Start -->
-    <section id="myprofile" class="section">
+    <!-- About Me / Traits Section -->
+    <section id="about" class="about-section">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Who am I?</h2>
-          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
-              <div class="icon">
-                <i class="lnr lnr-graduation-hat"></i>
-              </div>
-              <h4>Student</h4>
-              <p>I'm a 4th-year undergraduate at UC Berkeley double majoring in Electrical Engineering and Computer Sciences (EECS) and Data Science.</p>
-            </div>
+        <header class="section-header">
+          <h2 class="section-title">Who Am I?</h2>
+          <p class="section-subtitle">A quick summary of my focus and core traits</p>
+        </header>
+
+        <div class="traits-grid">
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">🚀</div>
+            <h3>Software Engineer</h3>
+            <p>Currently a Software Engineer at Google, focused on building Google Analytics. Previously a Member of
+              Technical Staff at VMware, working in cloud and virtualization infrastructure.</p>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon">
-                <i class="lnr lnr-code"></i>
-              </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">🎓</div>
+            <h3>UC Berkeley Alum</h3>
+            <p>Double major in Electrical Engineering and Computer Sciences (EECS) and Data Science — Class of 2020. Go
+              Bears!</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">📊</div>
+            <h3>Data Scientist</h3>
+            <p>I love wrangling with big data, delivering actionable insights, and developing machine learning models
+              from the ground up.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">🌍</div>
+            <h3>Traveler</h3>
+            <p>I have visited 4 continents and 25 countries and counting. I love exploring the many places that the
+              world has to offer.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">📖</div>
+            <h3>Lifelong Learner</h3>
+            <p>I love picking up new technologies and skills — from cloud infrastructure to machine learning — and
+              applying them to real problems.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">⚙️</div>
+            <h3>Systems Thinker</h3>
+            <p>Whether it's backend architecture, data pipelines, or hardware circuits, I enjoy designing robust systems
+              end to end.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="experience-bg-accent" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">What I've Done</h2>
+          <p class="section-subtitle">My professional journey and academic timeline</p>
+        </header>
+
+        <div class="timeline-container">
+          <div class="timeline-progress-bar" aria-hidden="true">
+            <div class="timeline-progress-fill"></div>
+          </div>
+
+          <!-- Experience Item 0: Google -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/googlelogo.svg" alt="Google Logo"
+                onerror="this.style.display='none';this.parentElement.querySelector('.timeline-logo-fallback').style.display='flex'">
+              <div class="timeline-logo-fallback"
+                style="display:none;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#4285F4,#34A853);color:#fff;font-weight:700;font-size:1.1rem">
+                G</div>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 – Present</span>
+              <h3>Google</h3>
               <h4>Software Engineer</h4>
-              <p>I love to build scalable, functional software. Take a look at the projects section to see what I've made over the past years.</p>
+              <p>Software Engineer working on building Google Analytics. Working on high-throughput data processing,
+                backend infrastructure, and large-scale web systems that power analytics for millions of apps and
+                websites globally.</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="1.0s">
-              <div class="icon">
-                <i class="lnr lnr-database"></i>
-              </div>
-              <h4>Data Scientist</h4>
-              <p>I love wrangling with big data, delivering actionable insights, and developing machine learning models.</p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="1.4s">
-              <div class="icon">
-                <i class="lnr lnr-earth"></i>
-              </div>
-              <h4>Traveler</h4>
-              <p>I have visited 4 continents and 13 countries and counting. I love exploring the many places that the world has to offer.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="1.8s">
-              <div class="icon">
-                <i class="lnr lnr-book"></i>
-              </div>
-              <h4>Learner</h4>
-              <p>I love to learn new things and always look into myself for improvement.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="item-boxes wow fadeInDown" data-wow-delay="2.2s">
-              <div class="icon">
-                <i class="lnr lnr-cog"></i>
-              </div>
-              <h4>Hard Worker</h4>
-              <p>No matter how hard the task ahead of me is, I always dig down and strive to complete it to the best of my ability.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About Me Section End -->
 
-    <!-- Experience Section Start -->
-    <section id="experience" class="section" data-stellar-background-ratio="0.2">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">What I've Done</h2>
-          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-        </div>
-        <div class="row wow fadeInDown" data-wow-delay="0.4s">
-          <div class="col-sm-4">
-            <img class="img-fulid" src="img/castlightlogo.jpeg" alt="">
+          <!-- Experience Item 0.5: VMware -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/vmwarelogo.svg" alt="VMware Logo"
+                onerror="this.style.display='none';this.parentElement.querySelector('.timeline-logo-fallback').style.display='flex'">
+              <div class="timeline-logo-fallback"
+                style="display:none;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#607078,#3f4d57);color:#fff;font-weight:700;font-size:0.7rem">
+                VM</div>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 – 2022</span>
+              <h3>VMware</h3>
+              <h4>Member of Technical Staff</h4>
+              <p>Engineered cloud and virtualization platform features as a full-time software engineer. Contributed to
+                core infrastructure products in the VMware ecosystem, focused on performance, reliability, and developer
+                experience at scale.</p>
+            </div>
           </div>
-          <div class="col-sm-8 box-item">
-            <div class="text">
+
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/castlightlogo.jpeg" alt="Castlight Health Logo">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Summer 2019</span>
               <h3>Castlight Health</h3>
-              <h4>Software Engineering Intern | Summer 2019</h4>
-              <p>I'm a full-stack software engineer working on the Castlight mobile app, which is built on Angular with the Ionic Framework.</p>
+              <h4>Software Engineering Intern</h4>
+              <p>Full-stack software engineer working on the Castlight mobile application, developing features using
+                Angular and the Ionic Framework to deliver a seamless healthcare guidance experience.</p>
             </div>
           </div>
-        </div>
-        <br>
-        <div class="row wow fadeInDown" data-wow-delay="0.8s">
-          <div class="col-sm-4">
-            <img class="img-fulid" src="img/ualogo.png" alt="">
-          </div>
-          <div class="col-sm-8 box-item">
-            <div class="text">
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/ualogo.png" alt="Under Armour Logo">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Summer 2018</span>
               <h3>Under Armour</h3>
-              <h4>Data Science and Analytics Intern | Summer 2018</h4>
-              <p>I was an intern at Under Armour MyFitnessPal and led a comprehensive analysis of Premium in MyFitnessPal.</p>
+              <h4>Data Science & Analytics Intern</h4>
+              <p>Interned at Under Armour MyFitnessPal, leading a comprehensive data analysis of Premium user behaviors,
+                driving monetization findings and predicting retention patterns.</p>
             </div>
           </div>
-        </div>
-        <br>
-        <div class="row wow fadeInDown" data-wow-delay="1.2s">
-          <div class="col-sm-4">
-            <img class="img-fulid" src="img/ucberkeleyseal.jpg" alt="">
-          </div>
-          <div class="col-sm-8 box-item">
-            <div class="text">
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/ucberkeleyseal.jpg" alt="UC Berkeley Seal">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Spring 2018</span>
               <h3>UC Berkeley Office of the Registrar</h3>
-              <h4>Classroom Systems Analyst | Spring 2018</h4>
-              <p>I am a student assistant at the UC Berkeley OR, where I code scripts to optimize data processing.</p>
+              <h4>Classroom Systems Analyst</h4>
+              <p>Student assistant creating Python automation scripts and database pipelines to optimize schedule
+                formatting and data processing workflows.</p>
             </div>
           </div>
-        </div>
-        <br>
-        <div class="row wow fadeInDown" data-wow-delay="1.6s">
-          <div class="col-sm-4">
-            <img class="img-fulid" src="img/pielogo.png" alt="">
-          </div>
-          <div class="col-sm-8 box-item">
-            <div class="text">
+
+          <!-- Experience Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/pielogo.png" alt="Pioneers in Engineering Logo">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Spring 2017</span>
               <h3>Pioneers in Engineering</h3>
-              <h4>Project Manager/Software Developer | Spring 2017</h4>
-              <p>I was a software developer turned into project manager for the Dawn project in the PiE organization.</p>
+              <h4>Project Manager & Software Developer</h4>
+              <p>Software developer turned project manager for the Dawn robotics configuration dashboard, coordinating
+                task distribution and frontend feature releases.</p>
             </div>
           </div>
-        </div>
-        <br>
-        <div class="row wow fadeInDown" data-wow-delay="2.0s">
-          <div class="col-sm-4">
-            <img class="img-fulid" src="img/ucberkeleyseal.jpg" alt="">
-          </div>
-          <div class="col-sm-8 box-item">
-            <div class="text">
+
+          <!-- Experience Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/ucberkeleyseal.jpg" alt="UC Berkeley Seal">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Fall 2016 - Spring 2020</span>
               <h3>UC Berkeley</h3>
-              <h4>B.S. Electrical Engineering and Computer Sciences, B.A. Data Science | Fall 2016 - Spring 2020</h4>
-              <p>I'm a student at UC Berkeley doing a double major in EECS and Data Science.</p>
+              <h4>B.S. EECS & B.A. Data Science</h4>
+              <p>Double major in Electrical Engineering and Computer Sciences (EECS) and Data Science. Rigorous
+                coursework covering software engineering, data structures, algorithms, machine learning, and hardware
+                design.</p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
-    <!-- Experience Section End -->
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-      <!-- Container Starts -->
+    <section id="projects" class="projects-section">
       <div class="container">
-        <div class="section-header">
+        <header class="section-header">
           <h2 class="section-title">What I've Built</h2>
-          <hr class="lines">
-        </div>
-        <!--<div class="row">-->
-          <!--<div class="col-md-12">-->
-            <!--&lt;!&ndash; Portfolio Controller/Buttons &ndash;&gt;-->
-            <!--<div class="controls text-center">-->
-              <!--<a class="filter active btn btn-common" data-filter="all">-->
-                <!--All-->
-              <!--</a>-->
-              <!--<a class="filter btn btn-common" data-filter=".software">-->
-                <!--Software-->
-              <!--</a>-->
-              <!--<a class="filter btn btn-common" data-filter=".hardware">-->
-                <!--Hardware-->
-              <!--</a>-->
-              <!--<a class="filter btn btn-common" data-filter=".school">-->
-                <!--School Project-->
-              <!--</a>-->
-            <!--</div>-->
-            <!--&lt;!&ndash; Portfolio Controller/Buttons Ends&ndash;&gt;-->
-          <!--</div>-->
+          <p class="section-subtitle">Selected academic, industry, and personal projects</p>
+        </header>
 
-          <!-- Portfolio Recent Projects -->
-          <div id="portfolio" class="row">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix software">
-              <div class="project-item">
-                <div class="shot-item">
-                  <h5>Multimeet</h5>
-                  <hr>
-                  <p>A web application built on Ruby on Rails that integrates a matching API developed by a PhD candidate that finds optimal matchings of times and people.</p>
-                  <a class="overlay lightbox" href="https://github.com/Aakup/MultiMeet" target="_blank">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
+        <div class="projects-grid">
+          <!-- Project 1: Multimeet -->
+          <div class="project-card-wrapper">
+            <button class="project-card-btn" commandfor="modal-multimeet" command="show-modal">
+              <div class="project-card-header">
+                <span class="project-category">Software / Web</span>
+                <h3>Multimeet</h3>
               </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix software">
-              <div class="project-item">
-                <div class="shot-item">
-                  <h5>MyFitnessPal Food Classifier Model</h5>
-                  <hr>
-                  <p>A convolutional neural network built on Keras with Tensorflow backend and a hackathon project concept that classifys foods to log into the MyFitnessPal food database.</p>
-                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#projects">
-                    NOT AVAILABLE
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix software">
-              <div class="project-item">
-                <div class="shot-item">
-                  <h5>Dawn</h5>
-                  <hr>
-                  <p>A cross-platform frontend for the PiE robotics control system, built on an Electron framework with React, Redux, and ES6.</p>
-                  <a class="overlay lightbox" href="https://github.com/pioneers/PieCentral/tree/master/dawn" target="_blank">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix software school">
-              <div class="project-item">
-                <div class="shot-item">
-                  <h5>Database</h5>
-                  <hr>
-                  <p>A relational database management system created with Java, coupled with
-                    domain specific language similar to SQL</p>
-                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#projects">
-                    NOT AVAILABLE
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix software school">
-              <div class="project-item">
-                <div class="shot-item">
-                  <h5>BearMaps</h5>
-                  <hr>
-                  <p>A map of Berkeley created with Java using a QuadTree data structure, coupled with
-                    an A* implementation to find shortest paths</p>
-                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#projects">
-                    NOT AVAILABLE
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix hardware software school">
-              <div class="project-item">
-                <div class="shot-item">
-                  <h5>SIXT33N</h5>
-                  <hr>
-                  <p>A miniature car that can obey voice commands, consisting of a front-end circuit to convert sound to signals
-                     and an MSP430 Launchpad programmed to perform PCA to classify commands</p>
-                  <a class="overlay lightbox item-icon nav-link page-scroll" href="#projects">
-                    NOT AVAILABLE
-                  </a>
-                </div>
-              </div>
-            </div>
+              <p class="project-card-desc">Ruby on Rails application incorporating a PhD research algorithm to calculate
+                optimal matching times and group meetings.</p>
+              <span class="project-learn-more">Learn details &rarr;</span>
+            </button>
           </div>
+
+          <!-- Project 2: Food Classifier -->
+          <div class="project-card-wrapper">
+            <button class="project-card-btn" commandfor="modal-food-classifier" command="show-modal">
+              <div class="project-card-header">
+                <span class="project-category">Data Science / ML</span>
+                <h3>MyFitnessPal Food Classifier</h3>
+              </div>
+              <p class="project-card-desc">Convolutional Neural Network built on Keras with TensorFlow backend to
+                identify food items from pictures for instant logging.</p>
+              <span class="project-learn-more">Learn details &rarr;</span>
+            </button>
+          </div>
+
+          <!-- Project 3: Dawn -->
+          <div class="project-card-wrapper">
+            <button class="project-card-btn" commandfor="modal-dawn" command="show-modal">
+              <div class="project-card-header">
+                <span class="project-category">Software / UI</span>
+                <h3>Dawn</h3>
+              </div>
+              <p class="project-card-desc">Cross-platform desktop dashboard for the PiE robotics control system, built
+                with Electron, React, Redux, and ES6.</p>
+              <span class="project-learn-more">Learn details &rarr;</span>
+            </button>
+          </div>
+
+
         </div>
       </div>
-      <!-- Container Ends -->
     </section>
-    <!-- Projects Section Ends -->
 
-    <!-- Counter Section Start -->
-    <div class="counters section" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="facts-item">
-              <div class="icon">
-                <i class="lnr lnr-user"></i>
-              </div>
-              <div class="fact-count">
-                <h3><span class="counter">1</span></h3>
-                <h4>Dedicated Individual</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="facts-item">
-              <div class="icon">
-                <i class="lnr lnr-briefcase"></i>
-              </div>
-              <div class="fact-count">
-                <h3><span class="counter">12</span></h3>
-                <h4>Projects Completed</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="facts-item">
-              <div class="icon">
-                <i class="lnr lnr-code"></i>
-              </div>
-              <div class="fact-count">
-                <h4>More than</h4>
-                <h3><span class="counter">10000</span></h3>
-                <h4>Lines of Code Written</h4>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3 col-lg-3">
-            <div class="facts-item">
-              <div class="icon">
-                <i class="lnr lnr-pencil"></i>
-              </div>
-              <div class="fact-count">
-                <h3><span class="counter">21</span></h3>
-                <h4>Courses Completed</h4>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+    <!-- Resume CTA Section -->
+    <section id="resume-cta" class="resume-cta-section">
+      <div class="container text-center">
+        <h2>Looking for the full story?</h2>
+        <p>Download my comprehensive resume for a detailed view of my qualifications, achievements, and course work.</p>
+        <a href="files/Resume.pdf" class="btn btn-primary btn-large" download="Lawrence_Chen_Resume.pdf">
+          <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume (PDF)
+        </a>
       </div>
-    </div>
-    <!-- Counter Section End -->
+    </section>
 
-    <!-- Start Courses Taken Section -->
-    <div id="coursestaken" class="section pricing-section">
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Some Courses I've Taken at Berkeley</h2>
-          <hr class="lines">
-        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p class="contact-intro">Feel free to reach out to connect, discuss software engineering, cloud
+              infrastructure, or anything in between!</p>
 
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="courses-taken">
-              <div class="course-details">
-                <h2>CS 170</h2>
-                <span>Algorithms</span>
-                <ul>
-                  <li>Graphs</li>
-                  <li>Greedy Algorithms</li>
-                  <li>Dyanmic Programming</li>
-                  <li>NP-Completeness</li>
-                </ul>
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <span class="detail-icon" aria-hidden="true">📍</span>
+                <div>
+                  <h4>Location</h4>
+                  <p>San Francisco Bay Area, CA</p>
+                </div>
               </div>
-              <div class="plan-button">
-                <a href="http://cs170.org" target="_blank" class="btn btn-common">Visit Site</a>
+              <div class="contact-detail-item">
+                <span class="detail-icon" aria-hidden="true">📞</span>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:12092987594">1-209-298-7594</a></p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <span class="detail-icon" aria-hidden="true">✉️</span>
+                <div>
+                  <h4>E-mail</h4>
+                  <p><a href="mailto:lawrencechen14@gmail.com">lawrencechen14@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-wrapper">
+              <h4>Connect With Me</h4>
+              <div class="social-links">
+                <a href="https://github.com/lawrencechen14" target="_blank" rel="noopener"
+                  aria-label="Lawrence's GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/lawrencechen14/" target="_blank" rel="noopener"
+                  aria-label="Lawrence's LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/lawrence.chen.547727" target="_blank" rel="noopener"
+                  aria-label="Lawrence's Facebook Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="courses-taken">
-              <div class="course-details">
-                <h2>CS 188</h2>
-                <span>AI</span>
-                <ul>
-                  <li>A* Search</li>
-                  <li>Markov Processes</li>
-                  <li>Reinforcement Learning</li>
-                  <li>Naive Bayes</li>
-                </ul>
+          <div class="contact-form-container">
+            <h3>Send a Message</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+                <div class="error-msg" id="name-error">❌ Name is required.</div>
               </div>
-              <div class="plan-button">
-                <a href="https://edge.edx.org/courses/course-v1:BerkeleyX+CS188+2018_SP/" target="_blank" class="btn btn-common nav-link page-scroll">Visit Site</a>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="courses-taken">
-              <div class="course-details">
-                <h2>CS C100</h2>
-                <span>Data Science</span>
-                <ul>
-                  <li>Data Visualization</li>
-                  <li>Relational Data Management</li>
-                  <li>Regression</li>
-                  <li>Modeling and Estimation</li>
-                </ul>
+              <div class="form-field">
+                <label for="email">Your Email</label>
+                <span id="email-hint" class="hint">Format: name@example.com</span>
+                <input type="email" id="email" name="email" required placeholder="you@example.com"
+                  aria-describedby="email-hint" aria-errormessage="email-error">
+                <div class="error-msg" id="email-error">❌ Please enter a valid email address.</div>
               </div>
-              <div class="plan-button">
-                <a href="http://www.ds100.org/sp18/" target="_blank" class="btn btn-common">Visit Site</a>
+
+              <div class="form-field">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required rows="5"
+                  placeholder="Let's build something..."></textarea>
+                <div class="error-msg" id="message-error">❌ Message cannot be empty.</div>
               </div>
-            </div>
-          </div>
 
-        </div>
-      </div>
-    </div>
-    <!-- End Courses Taken Section -->
-
-    <!-- Start Resume Section -->
-    <section class="video-promo section" id="resume">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="video-promo-content text-center">
-              <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Finally, here is my resume.</h2>
-              <a href="files/Resume.pdf" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-file-empty"></i></a>
-            </div>
+              <div class="submit-wrapper">
+                <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Resume Section -->
+  </main>
 
-    <!-- Contact Section Start -->
-    <section id="contact" class="section" data-stellar-background-ratio="-0.2">
-      <div class="contact-form">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <div class="contact-us">
-                <h3>Contact Me</h3>
-                <div class="contact-address">
-                  <p>Berkeley, CA</p>
-                  <p class="phone">Phone: <span>1-209-298-7594</span></p>
-                  <p class="email">E-mail: <span>lawrencechen14@berkeley.edu</span></p>
-                </div>
-                <div class="social-icons">
-                  <ul>
-                    <li class="facebook"><a href="https://www.facebook.com/lawrence.chen.547727" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                    <li class="github"><a href="https://github.com/lawrencechen14" target="_blank"><i class="fa fa-github"></i></a></li>
-                    <li class="google-plus"><a href="https://plus.google.com/u/0/" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                    <li class="linkedin"><a href="https://www.linkedin.com/in/lawrencechen14/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-6 col-xs-12">
-              <div class="contact-block">
-                <form id="contactForm">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="submit-button text-center">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        <div class="clearfix"></div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Lawrence Chen. Built with modern, standard web APIs.</p>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODALS (DECLARATIVE DIALOGS) -->
+
+  <!-- Modal 1: Multimeet -->
+  <dialog id="modal-multimeet" class="project-dialog">
+    <div class="dialog-header">
+      <h2>Multimeet</h2>
+      <button class="close-btn" commandfor="modal-multimeet" command="close" aria-label="Close dialog">&times;</button>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-desc">A web application that streamlines scheduling meetings across varying schedules by
+        executing an optimized match algorithm.</p>
+      <div class="dialog-section">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Built on the <strong>Ruby on Rails</strong> framework.</li>
+          <li>Integrates a custom matching API designed by a PhD researcher to calculate optimal overlaps of times and
+            people.</li>
+          <li>Fully responsive and provides an interactive user scheduler.</li>
+        </ul>
       </div>
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Section Start -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <!-- Footer Links -->
-          <div class="row">
-            <ul class="footer-links">
-              <li>
-                <a class="nav-link page-scroll" href="#hero-area">Homepage</a>
-              </li>
-              <li>
-                <a class="nav-link page-scroll" href="#myprofile">About Me</a>
-              </li>
-              <li>
-                <a class="nav-link page-scroll" href="#experience">Experience</a>
-              </li>
-              <li>
-                <a class="nav-link page-scroll" href="#projects">Projects</a>
-              </li>
-              <li>
-                <a class="nav-link page-scroll" href="#coursestaken">Courses Taken</a>
-              </li>
-              <li>
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="dialog-tech-tags">
+        <span>Ruby on Rails</span>
+        <span>Matching API</span>
+        <span>Bootstrap</span>
+        <span>Web Scheduling</span>
       </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="lnr lnr-arrow-up"></i>
-    </a>
-
-    <div id="loader">
-      <div class="spinner">
-        <div class="double-bounce1"></div>
-        <div class="double-bounce2"></div>
+      <div class="dialog-footer">
+        <a href="https://github.com/Aakup/MultiMeet" target="_blank" rel="noopener" class="btn btn-primary">View on
+          GitHub</a>
       </div>
     </div>
+  </dialog>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mixitup.js"></script>
-    <script src="js/nivo-lightbox.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/jquery.nav.js"></script>
-    <script src="js/scrolling-nav.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.vide.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>
-    <script src="js/main.js"></script>
+  <!-- Modal 2: Food Classifier -->
+  <dialog id="modal-food-classifier" class="project-dialog">
+    <div class="dialog-header">
+      <h2>MyFitnessPal Food Classifier</h2>
+      <button class="close-btn" commandfor="modal-food-classifier" command="close"
+        aria-label="Close dialog">&times;</button>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-desc">A machine learning utility designed for a hackathon concept, easing user logging on
+        MyFitnessPal.</p>
+      <div class="dialog-section">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Deep learning classifier leveraging **Convolutional Neural Networks (CNNs)**.</li>
+          <li>Developed using **Keras** with a **TensorFlow** backend.</li>
+          <li>Designed to instantly classify food image uploads for direct population of nutrition tracking profiles.
+          </li>
+        </ul>
+      </div>
+      <div class="dialog-tech-tags">
+        <span>Keras</span>
+        <span>TensorFlow</span>
+        <span>Python</span>
+        <span>Deep Learning</span>
+        <span>Computer Vision</span>
+      </div>
+      <div class="dialog-footer">
+        <button class="btn btn-outline" disabled>Not Publicly Available</button>
+      </div>
+    </div>
+  </dialog>
 
-  </body>
+  <!-- Modal 3: Dawn -->
+  <dialog id="modal-dawn" class="project-dialog">
+    <div class="dialog-header">
+      <h2>Dawn</h2>
+      <button class="close-btn" commandfor="modal-dawn" command="close" aria-label="Close dialog">&times;</button>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-desc">The cross-platform frontend control dashboard used in Pioneers in Engineering high school
+        robotics competition.</p>
+      <div class="dialog-section">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Serves as the main operator interface for controlling PiE robots.</li>
+          <li>Built on the **Electron** framework for a uniform cross-platform desktop application.</li>
+          <li>Engineered using modern web technologies: **React**, **Redux**, and **ES6**.</li>
+        </ul>
+      </div>
+      <div class="dialog-tech-tags">
+        <span>React</span>
+        <span>Redux</span>
+        <span>Electron</span>
+        <span>ES6</span>
+        <span>Robotics Controls</span>
+      </div>
+      <div class="dialog-footer">
+        <a href="https://github.com/pioneers/PieCentral/tree/master/dawn" target="_blank" rel="noopener"
+          class="btn btn-primary">View Codebase</a>
+      </div>
+    </div>
+  </dialog>
+
+
+
+  <!-- Client-side JavaScript -->
+  <script type="module" src="app.js"></script>
+</body>
+
 </html>
