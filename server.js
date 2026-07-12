@@ -1,3 +1,11 @@
+/**
+ * LOCAL TESTING SERVER ONLY
+ * 
+ * This server utility is used solely for local development and previewing the website 
+ * at http://localhost:8000/. It is not used or required by GitHub Pages, which serves
+ * the portfolio website statically.
+ */
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
