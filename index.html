@@ -1,517 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Lawrence Chen - Software Engineer at Google building Google Analytics, with a background in cloud, virtualization, and full-stack development. UC Berkeley EECS & Data Science alumnus.">
-    <meta name="keywords" content="Lawrence Chen, Portfolio, Software Engineer, Google, VMware, UC Berkeley, EECS, Data Science, Cloud">
-    <meta name="author" content="Lawrence Chen">
-    <title>Lawrence Chen - Software Engineer | Google</title>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Lawrence Chen - Software Engineer at Google building Google Analytics, with a background in cloud, virtualization, and full-stack development. UC Berkeley EECS & Data Science alumnus.">
+  <meta name="keywords"
+    content="Lawrence Chen, Portfolio, Software Engineer, Google, VMware, UC Berkeley, EECS, Data Science, Cloud">
+  <meta name="author" content="Lawrence Chen">
+  <title>Lawrence Chen - Software Engineer | Google</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="index.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/svg+xml" href="img/logo.svg"/>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="index.css">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114525051-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-114525051-1');
-    </script>
-  </head>
-  <body>
-    <!-- Scroll Progress Indicator -->
-    <div id="scroll-progress" aria-hidden="true"></div>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/svg+xml" href="img/logo.svg" />
 
-    <!-- Header & Navigation -->
-    <header class="navbar-wrapper">
-      <div class="container nav-container">
-        <a href="#home" class="brand-logo" aria-label="Lawrence Chen Homepage">
-          <svg class="brand-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
-            <path d="M 28 25 V 75 H 52" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M 76 32 A 21 21 0 1 0 76 68" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114525051-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-114525051-1');
+  </script>
+</head>
+
+<body>
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar-wrapper">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Lawrence Chen Homepage">
+        <svg class="brand-image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-hidden="true"
+          focusable="false">
+          <path d="M 28 25 V 75 H 52" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M 76 32 A 21 21 0 1 0 76 68" fill="none" stroke="currentColor" stroke-width="8"
+            stroke-linecap="round" />
+        </svg>
+      </a>
+      <nav class="main-navigation" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode">
+          <!-- Sun Icon -->
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
           </svg>
-        </a>
-        <nav class="main-navigation" id="main-nav" aria-label="Main Navigation">
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="nav-actions">
-          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light and dark mode">
-            <!-- Sun Icon -->
-            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-            <!-- Moon Icon -->
-            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-            </svg>
-          </button>
-          <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-greeting">Hi, welcome to</span>
+          <h1 class="hero-title">Lawrence Chen</h1>
+          <p class="hero-subtitle">Software Engineer @ Google &middot; UC Berkeley Alum</p>
+          <div class="hero-cta-group">
+            <a href="#about" class="btn btn-primary">Learn More About Me</a>
+            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <main>
-      <!-- Hero Section -->
-      <section id="home" class="hero-section">
-        <div class="hero-bg-accent" aria-hidden="true"></div>
-        <div class="container hero-container">
-          <div class="hero-content">
-            <span class="hero-greeting">Hi, welcome to</span>
-            <h1 class="hero-title">Lawrence Chen</h1>
-            <p class="hero-subtitle">Software Engineer @ Google &middot; UC Berkeley Alum</p>
-            <div class="hero-cta-group">
-              <a href="#about" class="btn btn-primary">Learn More About Me</a>
-              <a href="#contact" class="btn btn-outline">Get In Touch</a>
-            </div>
+    <!-- About Me / Traits Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">Who Am I?</h2>
+          <p class="section-subtitle">A quick summary of my focus and core traits</p>
+        </header>
+
+        <div class="traits-grid">
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">🚀</div>
+            <h3>Software Engineer</h3>
+            <p>Currently a Software Engineer at Google, focused on building Google Analytics. Previously a Member of
+              Technical Staff at VMware, working in cloud and virtualization infrastructure.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">🎓</div>
+            <h3>UC Berkeley Alum</h3>
+            <p>Double major in Electrical Engineering and Computer Sciences (EECS) and Data Science — Class of 2020. Go
+              Bears!</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">📊</div>
+            <h3>Data Scientist</h3>
+            <p>I love wrangling with big data, delivering actionable insights, and developing machine learning models
+              from the ground up.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">🌍</div>
+            <h3>Traveler</h3>
+            <p>I have visited 4 continents and 25 countries and counting. I love exploring the many places that the
+              world has to offer.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">📖</div>
+            <h3>Lifelong Learner</h3>
+            <p>I love picking up new technologies and skills — from cloud infrastructure to machine learning — and
+              applying them to real problems.</p>
+          </div>
+          <div class="trait-card">
+            <div class="trait-icon" aria-hidden="true">⚙️</div>
+            <h3>Systems Thinker</h3>
+            <p>Whether it's backend architecture, data pipelines, or hardware circuits, I enjoy designing robust systems
+              end to end.</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- About Me / Traits Section -->
-      <section id="about" class="about-section">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">Who Am I?</h2>
-            <p class="section-subtitle">A quick summary of my focus and core traits</p>
-          </header>
-          
-          <div class="traits-grid">
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">🚀</div>
-              <h3>Software Engineer</h3>
-              <p>Currently a Software Engineer at Google, focused on building Google Analytics. Previously a Member of Technical Staff at VMware, working in cloud and virtualization infrastructure.</p>
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="experience-bg-accent" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">What I've Done</h2>
+          <p class="section-subtitle">My professional journey and academic timeline</p>
+        </header>
+
+        <div class="timeline-container">
+          <div class="timeline-progress-bar" aria-hidden="true">
+            <div class="timeline-progress-fill"></div>
+          </div>
+
+          <!-- Experience Item 0: Google -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/googlelogo.svg" alt="Google Logo"
+                onerror="this.style.display='none';this.parentElement.querySelector('.timeline-logo-fallback').style.display='flex'">
+              <div class="timeline-logo-fallback"
+                style="display:none;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#4285F4,#34A853);color:#fff;font-weight:700;font-size:1.1rem">
+                G</div>
             </div>
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">🎓</div>
-              <h3>UC Berkeley Alum</h3>
-              <p>Double major in Electrical Engineering and Computer Sciences (EECS) and Data Science — Class of 2020. Go Bears!</p>
-            </div>
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">📊</div>
-              <h3>Data Scientist</h3>
-              <p>I love wrangling with big data, delivering actionable insights, and developing machine learning models from the ground up.</p>
-            </div>
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">🌍</div>
-              <h3>Traveler</h3>
-              <p>I have visited 4 continents and 13 countries and counting. I love exploring the many places that the world has to offer.</p>
-            </div>
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">📖</div>
-              <h3>Lifelong Learner</h3>
-              <p>I love picking up new technologies and skills — from cloud infrastructure to machine learning — and applying them to real problems.</p>
-            </div>
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">⚙️</div>
-              <h3>Systems Thinker</h3>
-              <p>Whether it's backend architecture, data pipelines, or hardware circuits, I enjoy designing robust systems end to end.</p>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 – Present</span>
+              <h3>Google</h3>
+              <h4>Software Engineer</h4>
+              <p>Software Engineer working on building Google Analytics. Working on high-throughput data processing,
+                backend infrastructure, and large-scale web systems that power analytics for millions of apps and
+                websites globally.</p>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Experience Section -->
-      <section id="experience" class="experience-section">
-        <div class="experience-bg-accent" aria-hidden="true"></div>
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">What I've Done</h2>
-            <p class="section-subtitle">My professional journey and academic timeline</p>
-          </header>
-
-          <div class="timeline-container">
-            <div class="timeline-progress-bar" aria-hidden="true">
-              <div class="timeline-progress-fill"></div>
+          <!-- Experience Item 0.5: VMware -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/vmwarelogo.svg" alt="VMware Logo"
+                onerror="this.style.display='none';this.parentElement.querySelector('.timeline-logo-fallback').style.display='flex'">
+              <div class="timeline-logo-fallback"
+                style="display:none;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#607078,#3f4d57);color:#fff;font-weight:700;font-size:0.7rem">
+                VM</div>
             </div>
-
-            <!-- Experience Item 0: Google -->
-            <div class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-logo">
-                <img src="img/googlelogo.svg" alt="Google Logo" onerror="this.style.display='none';this.parentElement.querySelector('.timeline-logo-fallback').style.display='flex'">
-                <div class="timeline-logo-fallback" style="display:none;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#4285F4,#34A853);color:#fff;font-weight:700;font-size:1.1rem">G</div>
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">2022 – Present</span>
-                <h3>Google</h3>
-                <h4>Software Engineer</h4>
-                <p>Software Engineer focused on building Google Analytics. Working on high-throughput data processing, backend infrastructure, and large-scale web systems that power analytics for millions of websites globally.</p>
-              </div>
-            </div>
-
-            <!-- Experience Item 0.5: VMware -->
-            <div class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-logo">
-                <img src="img/vmwarelogo.svg" alt="VMware Logo" onerror="this.style.display='none';this.parentElement.querySelector('.timeline-logo-fallback').style.display='flex'">
-                <div class="timeline-logo-fallback" style="display:none;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#607078,#3f4d57);color:#fff;font-weight:700;font-size:0.7rem">VM</div>
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">2020 – 2022</span>
-                <h3>VMware</h3>
-                <h4>Member of Technical Staff</h4>
-                <p>Engineered cloud and virtualization platform features as a full-time software engineer. Contributed to core infrastructure products in the VMware ecosystem, focused on performance, reliability, and developer experience at scale.</p>
-              </div>
-            </div>
-
-            <!-- Experience Item 1 -->
-            <div class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-logo">
-                <img src="img/castlightlogo.jpeg" alt="Castlight Health Logo">
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">Summer 2019</span>
-                <h3>Castlight Health</h3>
-                <h4>Software Engineering Intern</h4>
-                <p>Full-stack software engineer working on the Castlight mobile application, developing features using Angular and the Ionic Framework to deliver a seamless healthcare guidance experience.</p>
-              </div>
-            </div>
-
-            <!-- Experience Item 2 -->
-            <div class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-logo">
-                <img src="img/ualogo.png" alt="Under Armour Logo">
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">Summer 2018</span>
-                <h3>Under Armour</h3>
-                <h4>Data Science & Analytics Intern</h4>
-                <p>Interned at Under Armour MyFitnessPal, leading a comprehensive data analysis of Premium user behaviors, driving monetization findings and predicting retention patterns.</p>
-              </div>
-            </div>
-
-            <!-- Experience Item 3 -->
-            <div class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-logo">
-                <img src="img/ucberkeleyseal.jpg" alt="UC Berkeley Seal">
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">Spring 2018</span>
-                <h3>UC Berkeley Office of the Registrar</h3>
-                <h4>Classroom Systems Analyst</h4>
-                <p>Student assistant creating Python automation scripts and database pipelines to optimize schedule formatting and data processing workflows.</p>
-              </div>
-            </div>
-
-            <!-- Experience Item 4 -->
-            <div class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-logo">
-                <img src="img/pielogo.png" alt="Pioneers in Engineering Logo">
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">Spring 2017</span>
-                <h3>Pioneers in Engineering</h3>
-                <h4>Project Manager & Software Developer</h4>
-                <p>Software developer turned project manager for the Dawn robotics configuration dashboard, coordinating task distribution and frontend feature releases.</p>
-              </div>
-            </div>
-
-            <!-- Experience Item 5 -->
-            <div class="timeline-item">
-              <div class="timeline-marker" aria-hidden="true"></div>
-              <div class="timeline-logo">
-                <img src="img/ucberkeleyseal.jpg" alt="UC Berkeley Seal">
-              </div>
-              <div class="timeline-content">
-                <span class="timeline-date">Fall 2016 - Spring 2020</span>
-                <h3>UC Berkeley</h3>
-                <h4>B.S. EECS & B.A. Data Science</h4>
-                <p>Double major in Electrical Engineering and Computer Sciences (EECS) and Data Science. Rigorous coursework covering software engineering, data structures, algorithms, machine learning, and hardware design.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-      <section id="projects" class="projects-section">
-        <div class="container">
-          <header class="section-header">
-            <h2 class="section-title">What I've Built</h2>
-            <p class="section-subtitle">Selected academic, industry, and personal projects</p>
-          </header>
-
-          <div class="projects-grid">
-            <!-- Project 1: Multimeet -->
-            <div class="project-card-wrapper">
-              <button class="project-card-btn" commandfor="modal-multimeet" command="show-modal">
-                <div class="project-card-header">
-                  <span class="project-category">Software / Web</span>
-                  <h3>Multimeet</h3>
-                </div>
-                <p class="project-card-desc">Ruby on Rails application incorporating a PhD research algorithm to calculate optimal matching times and group meetings.</p>
-                <span class="project-learn-more">Learn details &rarr;</span>
-              </button>
-            </div>
-
-            <!-- Project 2: Food Classifier -->
-            <div class="project-card-wrapper">
-              <button class="project-card-btn" commandfor="modal-food-classifier" command="show-modal">
-                <div class="project-card-header">
-                  <span class="project-category">Data Science / ML</span>
-                  <h3>MyFitnessPal Food Classifier</h3>
-                </div>
-                <p class="project-card-desc">Convolutional Neural Network built on Keras with TensorFlow backend to identify food items from pictures for instant logging.</p>
-                <span class="project-learn-more">Learn details &rarr;</span>
-              </button>
-            </div>
-
-            <!-- Project 3: Dawn -->
-            <div class="project-card-wrapper">
-              <button class="project-card-btn" commandfor="modal-dawn" command="show-modal">
-                <div class="project-card-header">
-                  <span class="project-category">Software / UI</span>
-                  <h3>Dawn</h3>
-                </div>
-                <p class="project-card-desc">Cross-platform desktop dashboard for the PiE robotics control system, built with Electron, React, Redux, and ES6.</p>
-                <span class="project-learn-more">Learn details &rarr;</span>
-              </button>
-            </div>
-
-
-          </div>
-        </div>
-      </section>
-
-
-
-      <!-- Resume CTA Section -->
-      <section id="resume-cta" class="resume-cta-section">
-        <div class="container text-center">
-          <h2>Looking for the full story?</h2>
-          <p>Download my comprehensive resume for a detailed view of my qualifications, achievements, and course work.</p>
-          <a href="files/Resume.pdf" class="btn btn-primary btn-large" download="Lawrence_Chen_Resume.pdf">
-            <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            Download Resume (PDF)
-          </a>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="contact-section">
-        <div class="container">
-          <div class="contact-grid">
-            <div class="contact-info">
-              <h2>Contact Me</h2>
-              <p class="contact-intro">Feel free to reach out to connect, discuss software engineering, cloud infrastructure, or anything in between!</p>
-              
-              <div class="contact-details-list">
-                <div class="contact-detail-item">
-                  <span class="detail-icon" aria-hidden="true">📍</span>
-                  <div>
-                    <h4>Location</h4>
-                    <p>San Francisco Bay Area, CA</p>
-                  </div>
-                </div>
-                <div class="contact-detail-item">
-                  <span class="detail-icon" aria-hidden="true">📞</span>
-                  <div>
-                    <h4>Phone</h4>
-                    <p><a href="tel:12092987594">1-209-298-7594</a></p>
-                  </div>
-                </div>
-                <div class="contact-detail-item">
-                  <span class="detail-icon" aria-hidden="true">✉️</span>
-                  <div>
-                    <h4>E-mail</h4>
-                    <p><a href="mailto:lawrencechen14@gmail.com">lawrencechen14@gmail.com</a></p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="social-wrapper">
-                <h4>Connect With Me</h4>
-                <div class="social-links">
-                  <a href="https://github.com/lawrencechen14" target="_blank" rel="noopener" aria-label="Lawrence's GitHub Profile">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                  </a>
-                  <a href="https://www.linkedin.com/in/lawrencechen14/" target="_blank" rel="noopener" aria-label="Lawrence's LinkedIn Profile">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                      <rect x="2" y="9" width="4" height="12"></rect>
-                      <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                  </a>
-                  <a href="https://www.facebook.com/lawrence.chen.547727" target="_blank" rel="noopener" aria-label="Lawrence's Facebook Profile">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="contact-form-container">
-              <h3>Send a Message</h3>
-              <form id="contactForm" novalidate>
-                <div class="form-field">
-                  <label for="name">Your Name</label>
-                  <input type="text" id="name" name="name" required placeholder="John Doe">
-                  <div class="error-msg" id="name-error">❌ Name is required.</div>
-                </div>
-
-                <div class="form-field">
-                  <label for="email">Your Email</label>
-                  <span id="email-hint" class="hint">Format: name@example.com</span>
-                  <input type="email" id="email" name="email" required placeholder="you@example.com" aria-describedby="email-hint" aria-errormessage="email-error">
-                  <div class="error-msg" id="email-error">❌ Please enter a valid email address.</div>
-                </div>
-
-                <div class="form-field">
-                  <label for="message">Your Message</label>
-                  <textarea id="message" name="message" required rows="5" placeholder="Let's build something..."></textarea>
-                  <div class="error-msg" id="message-error">❌ Message cannot be empty.</div>
-                </div>
-
-                <div class="submit-wrapper">
-                  <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
-                  <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
-                </div>
-              </form>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 – 2022</span>
+              <h3>VMware</h3>
+              <h4>Member of Technical Staff</h4>
+              <p>Engineered cloud and virtualization platform features as a full-time software engineer. Contributed to
+                core infrastructure products in the VMware ecosystem, focused on performance, reliability, and developer
+                experience at scale.</p>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="site-footer">
+          <!-- Experience Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/castlightlogo.jpeg" alt="Castlight Health Logo">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Summer 2019</span>
+              <h3>Castlight Health</h3>
+              <h4>Software Engineering Intern</h4>
+              <p>Full-stack software engineer working on the Castlight mobile application, developing features using
+                Angular and the Ionic Framework to deliver a seamless healthcare guidance experience.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/ualogo.png" alt="Under Armour Logo">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Summer 2018</span>
+              <h3>Under Armour</h3>
+              <h4>Data Science & Analytics Intern</h4>
+              <p>Interned at Under Armour MyFitnessPal, leading a comprehensive data analysis of Premium user behaviors,
+                driving monetization findings and predicting retention patterns.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/ucberkeleyseal.jpg" alt="UC Berkeley Seal">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Spring 2018</span>
+              <h3>UC Berkeley Office of the Registrar</h3>
+              <h4>Classroom Systems Analyst</h4>
+              <p>Student assistant creating Python automation scripts and database pipelines to optimize schedule
+                formatting and data processing workflows.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/pielogo.png" alt="Pioneers in Engineering Logo">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Spring 2017</span>
+              <h3>Pioneers in Engineering</h3>
+              <h4>Project Manager & Software Developer</h4>
+              <p>Software developer turned project manager for the Dawn robotics configuration dashboard, coordinating
+                task distribution and frontend feature releases.</p>
+            </div>
+          </div>
+
+          <!-- Experience Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-logo">
+              <img src="img/ucberkeleyseal.jpg" alt="UC Berkeley Seal">
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-date">Fall 2016 - Spring 2020</span>
+              <h3>UC Berkeley</h3>
+              <h4>B.S. EECS & B.A. Data Science</h4>
+              <p>Double major in Electrical Engineering and Computer Sciences (EECS) and Data Science. Rigorous
+                coursework covering software engineering, data structures, algorithms, machine learning, and hardware
+                design.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <header class="section-header">
+          <h2 class="section-title">What I've Built</h2>
+          <p class="section-subtitle">Selected academic, industry, and personal projects</p>
+        </header>
+
+        <div class="projects-grid">
+          <!-- Project 1: Multimeet -->
+          <div class="project-card-wrapper">
+            <button class="project-card-btn" commandfor="modal-multimeet" command="show-modal">
+              <div class="project-card-header">
+                <span class="project-category">Software / Web</span>
+                <h3>Multimeet</h3>
+              </div>
+              <p class="project-card-desc">Ruby on Rails application incorporating a PhD research algorithm to calculate
+                optimal matching times and group meetings.</p>
+              <span class="project-learn-more">Learn details &rarr;</span>
+            </button>
+          </div>
+
+          <!-- Project 2: Food Classifier -->
+          <div class="project-card-wrapper">
+            <button class="project-card-btn" commandfor="modal-food-classifier" command="show-modal">
+              <div class="project-card-header">
+                <span class="project-category">Data Science / ML</span>
+                <h3>MyFitnessPal Food Classifier</h3>
+              </div>
+              <p class="project-card-desc">Convolutional Neural Network built on Keras with TensorFlow backend to
+                identify food items from pictures for instant logging.</p>
+              <span class="project-learn-more">Learn details &rarr;</span>
+            </button>
+          </div>
+
+          <!-- Project 3: Dawn -->
+          <div class="project-card-wrapper">
+            <button class="project-card-btn" commandfor="modal-dawn" command="show-modal">
+              <div class="project-card-header">
+                <span class="project-category">Software / UI</span>
+                <h3>Dawn</h3>
+              </div>
+              <p class="project-card-desc">Cross-platform desktop dashboard for the PiE robotics control system, built
+                with Electron, React, Redux, and ES6.</p>
+              <span class="project-learn-more">Learn details &rarr;</span>
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Resume CTA Section -->
+    <section id="resume-cta" class="resume-cta-section">
       <div class="container text-center">
-        <p>&copy; 2026 Lawrence Chen. Built with modern, standard web APIs.</p>
+        <h2>Looking for the full story?</h2>
+        <p>Download my comprehensive resume for a detailed view of my qualifications, achievements, and course work.</p>
+        <a href="files/Resume.pdf" class="btn btn-primary btn-large" download="Lawrence_Chen_Resume.pdf">
+          <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume (PDF)
+        </a>
       </div>
-    </footer>
+    </section>
 
-    <!-- PROJECT MODALS (DECLARATIVE DIALOGS) -->
-    
-    <!-- Modal 1: Multimeet -->
-    <dialog id="modal-multimeet" class="project-dialog">
-      <div class="dialog-header">
-        <h2>Multimeet</h2>
-        <button class="close-btn" commandfor="modal-multimeet" command="close" aria-label="Close dialog">&times;</button>
-      </div>
-      <div class="dialog-content">
-        <p class="dialog-desc">A web application that streamlines scheduling meetings across varying schedules by executing an optimized match algorithm.</p>
-        <div class="dialog-section">
-          <h3>Highlights</h3>
-          <ul>
-            <li>Built on the <strong>Ruby on Rails</strong> framework.</li>
-            <li>Integrates a custom matching API designed by a PhD researcher to calculate optimal overlaps of times and people.</li>
-            <li>Fully responsive and provides an interactive user scheduler.</li>
-          </ul>
-        </div>
-        <div class="dialog-tech-tags">
-          <span>Ruby on Rails</span>
-          <span>Matching API</span>
-          <span>Bootstrap</span>
-          <span>Web Scheduling</span>
-        </div>
-        <div class="dialog-footer">
-          <a href="https://github.com/Aakup/MultiMeet" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
-        </div>
-      </div>
-    </dialog>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p class="contact-intro">Feel free to reach out to connect, discuss software engineering, cloud
+              infrastructure, or anything in between!</p>
 
-    <!-- Modal 2: Food Classifier -->
-    <dialog id="modal-food-classifier" class="project-dialog">
-      <div class="dialog-header">
-        <h2>MyFitnessPal Food Classifier</h2>
-        <button class="close-btn" commandfor="modal-food-classifier" command="close" aria-label="Close dialog">&times;</button>
-      </div>
-      <div class="dialog-content">
-        <p class="dialog-desc">A machine learning utility designed for a hackathon concept, easing user logging on MyFitnessPal.</p>
-        <div class="dialog-section">
-          <h3>Highlights</h3>
-          <ul>
-            <li>Deep learning classifier leveraging **Convolutional Neural Networks (CNNs)**.</li>
-            <li>Developed using **Keras** with a **TensorFlow** backend.</li>
-            <li>Designed to instantly classify food image uploads for direct population of nutrition tracking profiles.</li>
-          </ul>
-        </div>
-        <div class="dialog-tech-tags">
-          <span>Keras</span>
-          <span>TensorFlow</span>
-          <span>Python</span>
-          <span>Deep Learning</span>
-          <span>Computer Vision</span>
-        </div>
-        <div class="dialog-footer">
-          <button class="btn btn-outline" disabled>Not Publicly Available</button>
-        </div>
-      </div>
-    </dialog>
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <span class="detail-icon" aria-hidden="true">📍</span>
+                <div>
+                  <h4>Location</h4>
+                  <p>San Francisco Bay Area, CA</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <span class="detail-icon" aria-hidden="true">📞</span>
+                <div>
+                  <h4>Phone</h4>
+                  <p><a href="tel:12092987594">1-209-298-7594</a></p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <span class="detail-icon" aria-hidden="true">✉️</span>
+                <div>
+                  <h4>E-mail</h4>
+                  <p><a href="mailto:lawrencechen14@gmail.com">lawrencechen14@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
 
-    <!-- Modal 3: Dawn -->
-    <dialog id="modal-dawn" class="project-dialog">
-      <div class="dialog-header">
-        <h2>Dawn</h2>
-        <button class="close-btn" commandfor="modal-dawn" command="close" aria-label="Close dialog">&times;</button>
+            <div class="social-wrapper">
+              <h4>Connect With Me</h4>
+              <div class="social-links">
+                <a href="https://github.com/lawrencechen14" target="_blank" rel="noopener"
+                  aria-label="Lawrence's GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/lawrencechen14/" target="_blank" rel="noopener"
+                  aria-label="Lawrence's LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+                <a href="https://www.facebook.com/lawrence.chen.547727" target="_blank" rel="noopener"
+                  aria-label="Lawrence's Facebook Profile">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <h3>Send a Message</h3>
+            <form id="contactForm" novalidate>
+              <div class="form-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+                <div class="error-msg" id="name-error">❌ Name is required.</div>
+              </div>
+
+              <div class="form-field">
+                <label for="email">Your Email</label>
+                <span id="email-hint" class="hint">Format: name@example.com</span>
+                <input type="email" id="email" name="email" required placeholder="you@example.com"
+                  aria-describedby="email-hint" aria-errormessage="email-error">
+                <div class="error-msg" id="email-error">❌ Please enter a valid email address.</div>
+              </div>
+
+              <div class="form-field">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required rows="5"
+                  placeholder="Let's build something..."></textarea>
+                <div class="error-msg" id="message-error">❌ Message cannot be empty.</div>
+              </div>
+
+              <div class="submit-wrapper">
+                <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="dialog-content">
-        <p class="dialog-desc">The cross-platform frontend control dashboard used in Pioneers in Engineering high school robotics competition.</p>
-        <div class="dialog-section">
-          <h3>Highlights</h3>
-          <ul>
-            <li>Serves as the main operator interface for controlling PiE robots.</li>
-            <li>Built on the **Electron** framework for a uniform cross-platform desktop application.</li>
-            <li>Engineered using modern web technologies: **React**, **Redux**, and **ES6**.</li>
-          </ul>
-        </div>
-        <div class="dialog-tech-tags">
-          <span>React</span>
-          <span>Redux</span>
-          <span>Electron</span>
-          <span>ES6</span>
-          <span>Robotics Controls</span>
-        </div>
-        <div class="dialog-footer">
-          <a href="https://github.com/pioneers/PieCentral/tree/master/dawn" target="_blank" rel="noopener" class="btn btn-primary">View Codebase</a>
-        </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Lawrence Chen. Built with modern, standard web APIs.</p>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODALS (DECLARATIVE DIALOGS) -->
+
+  <!-- Modal 1: Multimeet -->
+  <dialog id="modal-multimeet" class="project-dialog">
+    <div class="dialog-header">
+      <h2>Multimeet</h2>
+      <button class="close-btn" commandfor="modal-multimeet" command="close" aria-label="Close dialog">&times;</button>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-desc">A web application that streamlines scheduling meetings across varying schedules by
+        executing an optimized match algorithm.</p>
+      <div class="dialog-section">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Built on the <strong>Ruby on Rails</strong> framework.</li>
+          <li>Integrates a custom matching API designed by a PhD researcher to calculate optimal overlaps of times and
+            people.</li>
+          <li>Fully responsive and provides an interactive user scheduler.</li>
+        </ul>
       </div>
-    </dialog>
+      <div class="dialog-tech-tags">
+        <span>Ruby on Rails</span>
+        <span>Matching API</span>
+        <span>Bootstrap</span>
+        <span>Web Scheduling</span>
+      </div>
+      <div class="dialog-footer">
+        <a href="https://github.com/Aakup/MultiMeet" target="_blank" rel="noopener" class="btn btn-primary">View on
+          GitHub</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal 2: Food Classifier -->
+  <dialog id="modal-food-classifier" class="project-dialog">
+    <div class="dialog-header">
+      <h2>MyFitnessPal Food Classifier</h2>
+      <button class="close-btn" commandfor="modal-food-classifier" command="close"
+        aria-label="Close dialog">&times;</button>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-desc">A machine learning utility designed for a hackathon concept, easing user logging on
+        MyFitnessPal.</p>
+      <div class="dialog-section">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Deep learning classifier leveraging **Convolutional Neural Networks (CNNs)**.</li>
+          <li>Developed using **Keras** with a **TensorFlow** backend.</li>
+          <li>Designed to instantly classify food image uploads for direct population of nutrition tracking profiles.
+          </li>
+        </ul>
+      </div>
+      <div class="dialog-tech-tags">
+        <span>Keras</span>
+        <span>TensorFlow</span>
+        <span>Python</span>
+        <span>Deep Learning</span>
+        <span>Computer Vision</span>
+      </div>
+      <div class="dialog-footer">
+        <button class="btn btn-outline" disabled>Not Publicly Available</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal 3: Dawn -->
+  <dialog id="modal-dawn" class="project-dialog">
+    <div class="dialog-header">
+      <h2>Dawn</h2>
+      <button class="close-btn" commandfor="modal-dawn" command="close" aria-label="Close dialog">&times;</button>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-desc">The cross-platform frontend control dashboard used in Pioneers in Engineering high school
+        robotics competition.</p>
+      <div class="dialog-section">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Serves as the main operator interface for controlling PiE robots.</li>
+          <li>Built on the **Electron** framework for a uniform cross-platform desktop application.</li>
+          <li>Engineered using modern web technologies: **React**, **Redux**, and **ES6**.</li>
+        </ul>
+      </div>
+      <div class="dialog-tech-tags">
+        <span>React</span>
+        <span>Redux</span>
+        <span>Electron</span>
+        <span>ES6</span>
+        <span>Robotics Controls</span>
+      </div>
+      <div class="dialog-footer">
+        <a href="https://github.com/pioneers/PieCentral/tree/master/dawn" target="_blank" rel="noopener"
+          class="btn btn-primary">View Codebase</a>
+      </div>
+    </div>
+  </dialog>
 
 
 
-    <!-- Client-side JavaScript -->
-    <script type="module" src="app.js"></script>
-  </body>
+  <!-- Client-side JavaScript -->
+  <script type="module" src="app.js"></script>
+</body>
+
 </html>
