@@ -1,5 +1,5 @@
 /**
- * Lawrence Chen Portfolio Refresh - Client-Side App
+ * Lawrence Chen Portfolio - Client-Side App
  * Coordinates modern APIs, fallbacks, and responsive menu behaviors.
  */
 
