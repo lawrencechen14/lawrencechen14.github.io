@@ -242,36 +242,54 @@ const initFormValidation = () => {
         formFeedback.className = 'form-feedback error';
       }
     } else {
-      // Form matches constraints. Send using mailto: since this is a static site
-      const formData = new FormData(contactForm);
-      const name = formData.get('name');
-      const email = formData.get('email');
-      const message = formData.get('message');
-      
-      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-      const body = encodeURIComponent(`${message}\n\n---\nReply to: ${email}`);
-      
-      window.location.href = `mailto:lawrencechen14@gmail.com?subject=${subject}&body=${body}`;
-
+      // Form matches constraints. Send using Web3Forms
       if (formFeedback) {
-        formFeedback.textContent = '⌛ Opening your email client...';
+        formFeedback.textContent = '⌛ Sending message...';
         formFeedback.className = 'form-feedback';
       }
 
-      setTimeout(() => {
-        if (formFeedback) {
-          formFeedback.textContent = '🎉 Thank you! Your message has been sent successfully.';
-          formFeedback.className = 'form-feedback success';
-        }
-        contactForm.reset();
+      const formData = new FormData(contactForm);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
 
-        // Clear dirty state classes
-        const inputs = contactForm.querySelectorAll('input, textarea');
-        inputs.forEach(input => {
-          input.classList.remove('user-invalid-fallback', 'user-valid-fallback');
-          input.removeAttribute('aria-invalid');
-        });
-      }, 1500);
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: json
+      })
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+          if (formFeedback) {
+            formFeedback.textContent = '🎉 Thank you! Your message has been sent successfully.';
+            formFeedback.className = 'form-feedback success';
+          }
+          contactForm.reset();
+          
+          // Clear dirty state classes
+          const inputs = contactForm.querySelectorAll('input, textarea');
+          inputs.forEach(input => {
+            input.classList.remove('user-invalid-fallback', 'user-valid-fallback');
+            input.removeAttribute('aria-invalid');
+          });
+        } else {
+          console.log(response);
+          if (formFeedback) {
+            formFeedback.textContent = '❌ ' + json.message;
+            formFeedback.className = 'form-feedback error';
+          }
+        }
+      })
+      .catch(error => {
+        console.log(error);
+        if (formFeedback) {
+          formFeedback.textContent = '❌ Something went wrong. Please try again later.';
+          formFeedback.className = 'form-feedback error';
+        }
+      });
     }
   });
 };
