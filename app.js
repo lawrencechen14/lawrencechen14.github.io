@@ -242,9 +242,19 @@ const initFormValidation = () => {
         formFeedback.className = 'form-feedback error';
       }
     } else {
-      // Form matches constraints. Simulate AJAX POST
+      // Form matches constraints. Send using mailto: since this is a static site
+      const formData = new FormData(contactForm);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const message = formData.get('message');
+      
+      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+      const body = encodeURIComponent(`${message}\n\n---\nReply to: ${email}`);
+      
+      window.location.href = `mailto:lawrencechen14@gmail.com?subject=${subject}&body=${body}`;
+
       if (formFeedback) {
-        formFeedback.textContent = '⌛ Sending message...';
+        formFeedback.textContent = '⌛ Opening your email client...';
         formFeedback.className = 'form-feedback';
       }
 
